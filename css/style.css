@@ -237,6 +237,64 @@ img {
 
 
 
+/* FAQ */
+.footer {
+  padding: 40px 0;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+.footer ul li a {
+  color: #ccc;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin: 10px 5px 30px 0 ;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer .card {
+  margin: 0px 30px 30px 0;
+}
+
+.footer-form-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer input[type='email'] {
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+/* .footer span {
+  line-height: 5;
+} */
+
+
 /* UTILITIES */
 .container {
   max-width: 1100px;
@@ -359,6 +417,81 @@ img {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* HAMBURGER BUTTON */
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/* MOBILEMENU */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin-top: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+ 
+}
+
+
+@media (max-width: 720px) {
+  .navbar .main-menu {
+    display: none;
+  }
+
+  .navbar .hamburger-button {
+    display: blocK;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
 }
 
 
