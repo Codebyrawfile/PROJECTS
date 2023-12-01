@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -191,6 +192,7 @@ img {
 .faq .faq-group .faq-group-header h4 {
   font-weight: 600;
   width: 95%;
+  cursor: pointer;
 }
 
 .faq .faq-group .faq-group-header i {
@@ -260,6 +262,7 @@ img {
 .footer i {
   font-size: 1.5rem;
   margin: 10px 5px 30px 0 ;
+  cursor: pointer;
 }
 
 .footer-grid {
@@ -474,11 +477,31 @@ img {
 /* MEDIA QUERIES */
 
 @media (max-width: 960px) {
- 
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 838px) {
+
+  .footer .footer-form-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 670px) {
   .navbar .main-menu {
     display: none;
   }
@@ -487,11 +510,104 @@ img {
     display: blocK;
   }
 
+  .hero .container {
+    background: url(../images/hero-bg-mobile.png) no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  .hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  /* Testimonials */
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid,
+  .footer .footer-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+
+  .footer .copyright {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Text */
+  .text-xl {
+    font-size: 1.9rem
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .hero .container {
+    background: url(../images/hero-bg-mobile.png) no-repeat;
+    background-size: 250px 300px;
+    background-position: bottom;
+    height: 660px;
+  }
+
+  .hero .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  
+  .hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .text-md {
+    font-size: 0.9rem;
+  }
 }
 
 
 @media (max-width: 500px) {
-
+  .text-xxl {
+    font-size: 2rem;
+  }
 }
 
 
